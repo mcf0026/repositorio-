@@ -1,0 +1,19 @@
+using System.Collentions.Generic;
+using UnityEngine;
+
+{
+    public float velocidad;
+    public float velocidadMax;
+
+    private Rigibody2D rPlayer;
+    private loat h;
+
+private bool miraDerecha = true;
+
+void Start ()
+{
+    rPlayer = GetComponent <Rigidbody2D>();
+}
+
+
+}
