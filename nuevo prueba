@@ -1,0 +1,19 @@
+using System.Collentions.Generic;
+using UnityEngine;
+public class PlayerController : MonoBehaviour
+{
+
+private bool miraDerecha = true;
+
+void Start ()
+{
+    rPlayer = GetComponent <Rigidbody2D>();
+}
+
+void Update ()
+{
+}
+private void FixedUpdate ()
+{
+}
+}
