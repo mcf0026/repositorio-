@@ -1,0 +1,23 @@
+using System.collection.Generic;
+using UnityEngine;
+public class Player controller : MonoBehaviour
+{
+        public float velocidad;
+        public float velocidadMax;
+
+        private Rigidbody2d rPlayer;
+        private loat h;
+private bool miraDerecha = True;
+// STart is called beforethe firstfrema update
+void Start ()
+{
+        rPlayer = GetComponent <Rigidbody2d<();
+}
+//Update is called once per frame
+void Update()
+{
+}
+private void FixedUpdate ()
+    {
+}
+}
