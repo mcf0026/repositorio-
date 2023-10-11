@@ -1,25 +1,26 @@
-using System.collection.Generic;
+using System.Collentions.Generic;
 using UnityEngine;
-public class Player controller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-        public float velocidad;
-        public float velocidadMax;
+    public float velocidad;
+    public float velocidadMax;
 
-        private Rigidbody2d rPlayer;
-        private loat h;
-        Hola mundo
-private bool miraDerecha = True;
-// STart is called beforethe firstfrema update
+    private Rigibody2D rPlayer;
+    private loat h;
+Hola Mundo
+private bool miraDerecha = true;
+
 void Start ()
 {
-        rPlayer = GetComponent <Rigidbody2d<();
+    rPlayer = GetComponent <Rigidbody2D>();
 }
-//Update is called once per frame
-void Update()
+
+void Update ()
 {
 }
 private void FixedUpdate ()
-    {
+{
+    h= Imput.GetAxisRam("Horizontal");
+    rPlayer.AddForce(Vector2.right * velocidad *h);
 }
 }
-
