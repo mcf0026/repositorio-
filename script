@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 using System.Collentions.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
@@ -20,3 +21,29 @@ private void FixedUpdate ()
     rPlayer.AddForce(Vector2.right * velocidad *h);
 }
 }
+=======
+using System.Collentions.Generic;
+using UnityEngine;
+public class PlayerController : MonoBehaviour
+
+/* VARIACIÓN DE DELTA */
+
+{
+    public float velocidad;
+    public float velocidadMax;
+
+    private Rigibody2D rPlayer;
+    private loat h;
+
+private bool miraDerecha = true;
+
+void Start ()
+{
+}
+private void FixedUpdate ()
+{
+    h= Imput.GetAxisRam("Horizontal");
+    rPlayer.AddForce(Vector2.right * velocidad *h);
+}
+}
+>>>>>>> Stashed changes
